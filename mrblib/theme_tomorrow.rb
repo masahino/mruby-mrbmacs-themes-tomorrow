@@ -59,7 +59,10 @@ module Mrbmacs
         color_caret_line: [@foreground_color, @@pallete[:current_line], nil, nil],
         color_indent_guide: [@@pallete[:foreground], @background_color, nil, nil],
         color_marker_breakpoint: [@@pallete[:blue], @@pallete[:selection], nil, nil],
-        color_marker_current: [@@pallete[:red], @@pallete[:selection], nil, nil]
+        color_marker_current: [@@pallete[:red], @@pallete[:selection], nil, nil],
+        # frame
+        color_mode_line: [@@pallete[:current_line], @@pallete[:comment], nil, nil],
+        color_mode_line_inactive: [@@pallete[:comment], @@pallete[:current_line], nil, nil]
       }
     end
   end
